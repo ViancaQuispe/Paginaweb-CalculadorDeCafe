@@ -1,0 +1,335 @@
+<html>
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .jumbatrom{
+      background: url(https://joinposter.com/i/site/blog/fbmaquinacafe_large.jpg)fixed;
+      background-size: cover;
+      height: 80vw;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bienvenido al inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Descripción del calculador de preferencias</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beneficios de conocer los gustos del café </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Cómo funciona el calculador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="pt-5">
+  <div class="jumbatrom p-5">
+
+  </div>
+
+</section>
+<h1 class="card_title">Descripcion de Proporciones de Cafe</h1>
+<p>
+  "Dominar las proporciones correctas entre cafe y agua es esencial para preparar una taza 
+  perfecta. Sin embargo, mejorar lo "<strong>ratios y cantidades exactas</strong>"puede
+  ser confuso, especialmente si estas empezando en el mundel cafe de especialidad o si utilizas
+  diferentes metodos de preparacion."
+</p>
+<h2 class="wp-block-heading">Beneficios de conocer los gustos del café </h2>
+<p>
+  "Imagina que estas cocinando tu plato favorito. si lo añades demasiada sal o muy poca,
+  el resultado final no sera el esperado. Con el cafe ocurre exactamente los mismo. Las"
+  <strong>proporciones inconrrectas</strong> "pueden resultar en:"
+</p>
+<ul class="wp-block-list">
+  <li>
+    ::marker
+    "Un cafe demasiado"<strong>aguado</strong>"y sin caracter"
+  </li>
+  <li>
+    ::marker
+    "Sabores excesivamente"<strong>amargos</strong>"o sobre-extraidos"
+  </li>
+  <li>
+    ::marker
+    "<strong>Desperdicio</strong>"innecesario de cafe"
+  </li>
+  <li>
+    ::marker
+    "Experiencias"<strong>inconsientes</strong>"dia tras dia "
+  </li>
+</ul>
+
+<h2 class="wp-block-heading">Cómo funciona el calculador </h2>
+<p>
+  "Para ayudarte a conseguir la taza perfecta, hemos desarrollado esta calculadora
+  que te indicara examente"<strong>cuanto de cafe y agua necesitas</strong>
+  "segun tu metodo de preparacion preferido."
+ </p>
+ <ol class="wp-block-list">
+    <li>
+      ::marker
+      "Selecciona tu metodo de preparacion preferido"
+    </li>
+    <li>
+      ::marker
+      "Indica el numero de tazas que deseas preparar"
+    </li>
+    <li>
+      ::marker
+      "Haz clic en Calcular"
+    </li>
+    <li>
+      ::marker
+      "¡Obten las proporciones exactas y los consejos de preparacion!"
+    </li>
+ </ol>
+<!--Calculadora-->
+<meta charset="UTF-8">
+    <title>Calculadora de Café</title>
+    <style>
+        .coffee-calc-container {
+            --coffee-primary: #A04800;
+            --coffee-secondary: #DEB887;
+            --coffee-bg: #FFF5E9;
+            --coffee-light: #FFF9F0;
+            all: initial;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+        }
+
+        .coffee-calc-container * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .coffee-calc-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: var(--coffee-light);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(160, 72, 0, 0.1);
+        }
+
+        .coffee-calc-title {
+            color: var(--coffee-primary);
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .coffee-calc-group {
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        .coffee-calc-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--coffee-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        /* Estilos específicos para el select con mayor altura */
+        .coffee-calc-select {
+            display: block;
+            width: 100%;
+            min-width: 400px;
+            height: 50px; /* Aumentada la altura */
+            padding: 0 0.75rem; /* Ajustado el padding vertical */
+            border: 2px solid var(--coffee-secondary);
+            border-radius: 5px;
+            background-color: var(--coffee-light);
+            color: var(--coffee-primary);
+            font-size: 1.1rem; /* Aumentado ligeramente el tamaño de fuente */
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            text-overflow: ellipsis;
+            -webkit-appearance: menulist;
+            -moz-appearance: menulist;
+            appearance: menulist;
+            line-height: 46px; /* Ajustado para centrar verticalmente el texto */
+        }
+
+        /* Estilo para las opciones del select */
+        .coffee-calc-select option {
+            padding: 12px; /* Mayor padding para las opciones */
+            height: 40px; /* Altura definida para las opciones */
+            line-height: 40px; /* Alineación vertical del texto en las opciones */
+            background-color: var(--coffee-light);
+            color: var(--coffee-primary);
+            font-size: 1.1rem;
+        }
+
+        .coffee-calc-input {
+            width: 100%;
+            height: 50px; /* Igualada la altura con el select */
+            padding: 0.75rem;
+            border: 2px solid var(--coffee-secondary);
+            border-radius: 5px;
+            background-color: var(--coffee-light);
+            color: var(--coffee-primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .coffee-calc-select:focus,
+        .coffee-calc-input:focus {
+            outline: none;
+            border-color: var(--coffee-primary);
+        }
+
+        .coffee-calc-info {
+            font-style: italic;
+            color: var(--coffee-primary);
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .coffee-calc-button {
+            background-color: var(--coffee-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            height: 50px; /* Igualada la altura con los otros elementos */
+        }
+
+        .coffee-calc-button:hover {
+            background-color: #803800;
+        }
+
+        .coffee-calc-result {
+            margin-top: 1.5rem;
+            padding: 1.25rem;
+            background-color: var(--coffee-light);
+            border-radius: 10px;
+            border: 2px solid var(--coffee-secondary);
+        }
+
+        .coffee-calc-result h3 {
+            color: var(--coffee-primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .coffee-calc-result p {
+            margin: 0.5rem 0;
+            color: var(--coffee-primary);
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        @media screen and (max-width: 600px) {
+            .coffee-calc-wrapper {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .coffee-calc-select {
+                width: 100%;
+                min-width: 100%;
+            }
+        }
+    </style>
+
+<div class="coffee-calc-container">
+  <div class="coffee-calc-wrapper">
+      <h2 class="coffee-calc-title">Calculadora de Café ☕</h2>
+      
+      <div class="coffee-calc-group">
+          <label class="coffee-calc-label" for="coffee-method">Método de preparación:</label>
+          <select class="coffee-calc-select" id="coffee-method">
+              <option value="french">Prensa Francesa</option>
+              <option value="drip">Goteo / Pour Over</option>
+              <option value="espresso">Espresso</option>
+              <option value="aeropress">AeroPress</option>
+              <option value="chemex">Chemex</option>
+          </select>
+      </div>
+      
+      <div class="coffee-calc-group">
+          <label class="coffee-calc-label" for="coffee-cups">Número de tazas:</label>
+          <input type="number" class="coffee-calc-input" id="coffee-cups" min="1" max="12" value="2">
+          <div class="coffee-calc-info">Una taza = 180ml</div>
+      </div>
+      
+      <button class="coffee-calc-button" onclick="coffeeCalculator.calculate()">Calcular</button>
+      
+      <div class="coffee-calc-result" id="coffee-result" style="display: none;">
+          <h3>Proporciones recomendadas:</h3>
+          <p id="coffee-amount">Cafe molido:24g</p>
+          <p id="coffee-water">Agua: 360ml (0.36L)</p>
+          <p id="coffee-additional">Tiempo de preparacion recomendado: 4 minutos</p>
+      </div>
+  </div>
+</div>
+
+<h2 class="wp-block-heading">Preguntas Frecuentes</h2>
+
+
+
+<p><strong>¿Por qué las proporciones varían según el método?</strong> Cada método de preparación tiene diferentes tiempos de contacto entre el agua y el café, además de distintas formas de filtración y presión.</p>
+
+
+
+<p><strong>¿Puedo modificar las proporciones según mi gusto?</strong> ¡Por supuesto! Las proporciones sugeridas son un punto de partida. La clave está en experimentar hasta encontrar tu balance perfecto.</p>
+
+
+
+<p><strong>¿El tipo de tostado afecta a las proporciones?</strong> Sí. Los tostados más oscuros suelen ser más solubles, por lo que podrías necesitar ajustar ligeramente la cantidad de café.</p>
+
+
+
+<p>La preparación del café perfecto es una mezcla de ciencia y arte. Con nuestra calculadora y esta guía, tienes las herramientas necesarias para comenzar tu viaje hacia la taza perfecta.</p>
+
+
+
+<p>Recuerda que la práctica hace al maestro, y que encontrar tu proporción ideal puede requerir algo de experimentación.</p>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   

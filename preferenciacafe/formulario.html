@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preferecnias</title>
+    <!---Seccion de estilo-->
+    <style>
+        html{font-size: 20px;}
+        body
+        {
+            background-color: rgb(238, 238, 224);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table,
+        th,td {
+            border: solid thin rgb(171, 150, 153);
+            border-collapse: collapse;
+            margin: 5% 50% 0% 0%;
+        }
+        tr:nth-child(even){background-color: rgb(205, 237, 205);}
+        tr:nth-child(odd){background-color: rgb(143, 227, 143);}
+    </style>
+    
+    <!--Codigo Javascript-->
+    <script>
+        //Array del formulario de preferencias de cafe (Objetos JSON)
+
+        const COFFE = [
+            {
+                "tipocafe": "expreso",
+                "preferencialeche": "entera",
+                "niveldulzura": "sin azucar",
+                "toppings": "canela"
+            },
+            {
+                "tipocafe": "americano",
+                "preferencialeche": "vegetal",
+                "niveldulzura": "poco",
+                "toppings": "chocolate"
+            },
+            {
+                "tipocafe": "latte",
+                "preferencialeche": "vegetal",
+                "niveldulzura": "medio",
+                "toppings": "canela"
+            },
+            {
+                "tipocafe": "frapuchino",
+                "preferencialeche": "sin lactosa",
+                "niveldulzura": "mucho",
+                "toppings": "chocolate"
+            }
+        ]
+            //Funcion Inicial
+            window.onload = function(){
+                //crear la tabla con los jugadores
+              CoffeTable();
+                //Identificar boton para modificar un nuevo tipo de cafe 
+                document.querySelector("#botonModificar").addEventListener("click",modificarDatos);
+                //Identificar boton para agregar un nuevo tipo de cafe 
+                document.querySelector("#newCOFFE").addEventListener("click",agregardatos);
+            }
+            function modificarDatos(){
+                let num = +document.querySelector("#numero").value;
+                COFFE[num].team = document.querySelector("#newleche").value;
+
+                CoffeTable();
+            }
+            function agregardatos(){
+                let tipocafe =document.querySelector("#newcoffe").value;
+                let preferencialeche =document.querySelector("#newleche").value;
+                let niveldulzura =document.querySelector("#newnivel").value;
+                let toppings =document.querySelector("#newtopping").value;
+
+                COFFE.push({"tipocafe":tipocafe,"preferencialeche":preferencialeche,"niveldulzura":niveldulzura,"toppings":toppings});
+                    CoffeTable();
+            }
+            
+            function CoffeTable()
+            {
+                //crear una varible tipo string
+                let htmlString = "";
+
+                htmlString +="<table>";
+                htmlString +="<tr>";
+                htmlString +="<th>tipocafe</th>";
+                htmlString +="<th>preferencialeche</th>";
+                htmlString +="<th>niveldulzura</th>";
+                htmlString +="<th>toppings</th>";
+                htmlString +="</tr>";
+
+                //Crear un loop para imprimir las filas de la tabla 
+                for(let i = 1; i <COFFE.length; i++){
+                    let datoActual = COFFE[i];
+                    const element = Array [i];
+                    htmlString += "<tr>";
+                    htmlString += "<td>" + datoActual.tipocafe + "</td>"; 
+                    htmlString += "<td>" + datoActual.preferencialeche + "</td>"; 
+                    htmlString += "<td>" + datoActual.niveldulzura + "</td>"; 
+                    htmlString += "<td>" + datoActual.toppings + "</td>"; 
+                    htmlString += "</tr>";
+                }
+
+                //Finalizar el bloque de la tabla
+                    htmlString += "</table>";
+                    console.log(htmlString);
+
+                    //Poner este String en la salida que definimos en HTML
+                    let tableContainer = document.querySelector("#theTable");
+                    tableContainer.innerHTML = htmlString;
+            }
+            
+      
+    </script>
+
+
+</head>
+<body>
+    
+
+
+    <h1>Formulario de preferencias</h1>
+    <div id="theTable">
+
+    </div>
+    
+    <h2>Modificar datos</h2> 
+    <div>Numero en la lista:</div>
+    <input type="number" id="numero">
+
+    <div>Tipo de Cafe Favorito</div>
+    <input type="text" id="newcoffe">
+    <div>Preferencia de Leche</div>
+    <input type="text" id="newleche">
+    <div>Nivel de Dulzura</div>
+    <input type="text" id="newnivel">
+    <div>Topping o Anadidos</div>
+    <input type="text" id="newtopping">
+    <button id="botonModificar">Modificar</button>
+
+    <h2>Agregar nuevos datos</h2> 
+    <div>Tipo de Cafe Favorito</div>
+    <input type="text" id="newcoffe">
+    <div>Preferencia de Leche</div>
+    <input type="text" id="newleche">
+    <div>Nivel de Dulzura</div>
+    <input type="text" id="newnivel">
+    <div>Topping o Anadidos</div>
+    <input type="text" id="newtopping">
+
+    <div><button id="newCOFFE">Añadir Datos</button></div>
+
+
+
+
+
+</body>
+</html>

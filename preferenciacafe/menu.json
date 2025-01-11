@@ -1,0 +1,54 @@
+[  
+    {
+      
+        "titulo": "Descripción del calculador de preferencias ",
+        "item": "1",
+            "id": [{
+                "es": "descripcion",
+                "en": "description"
+    }],
+        "text": "1",
+            "_id":[{
+                "es": "La educación es el proceso de facilitar el refinamiento de habilidades o capacidades propias del individuo, mediante el aprendizaje, la construcción de conocimientos o diversas experiencias",
+                "en": "Education is the process of facilitating the refinement of the individual's own skills or abilities, through learning, the construction of knowledge or various experiences"
+            }]
+             
+       
+
+       
+        
+                
+       
+    },
+    {
+        "nombre": "Beneficios de conocer los gustos del café ",
+        "item":{
+            "id": {
+                "es": "descripcion",
+                "en": "description"
+            }
+        }
+       
+    },
+    {
+        "nombre": "Cómo funciona el calculador ",
+        "item":{
+            "id": {
+                "es": "descripcion",
+                "en": "description"
+            }
+        }
+       
+    },
+    {
+        "nombre": "Preguntas frecuentes ",
+        "item":{
+            "id": {
+                "es": "descripcion",
+                "en": "description"
+            }
+        }
+       
+    }
+   
+]

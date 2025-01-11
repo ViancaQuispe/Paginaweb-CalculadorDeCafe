@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item>
+        <nombre>Inicio</nombre>
+        <link>principal.html</link>
+    </item>
+    <item>
+        <nombre>Formulario de Preferencia</nombre>
+        <link>formulario.html</link>
+    </item>
+    <item>
+        <nombre>Recomendaciones de Cafe</nombre>
+        <link>recomendaciones.html</link>
+    </item>
+    <item>
+        <nombre>Comunidad</nombre>
+        <link>comunidad.html</link>
+    </item>
+    <item>
+        <nombre>Extras</nombre>
+        <link>extras.html</link>
+    </item>
+    <item>
+        <nombre>FAQ</nombre>
+        <link>faq.html</link>
+    </item>
+    <item>
+        <nombre>Contacto</nombre>
+        <link>contacto.html</link>
+    </item>
+</menu>
